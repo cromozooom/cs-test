@@ -11,8 +11,7 @@ router.get('/', function(req, res, next) {
   var corporateData     = corporateJson.corporate;
   var activeTradeData   = activeTradeJson.activeTrade;
   var notesData         = notesJson.notes;
-
-  console.log(notesData[1].notesdatemonth);
+  //console.log(notesData[1].notesdatemonth);
 
   res.render('index', {
     corporate:          corporateData,
