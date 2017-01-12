@@ -1,0 +1,67 @@
+extends layout
+
+block content
+  .container
+    .sectionCard
+      .row
+        .col-xs-12.col-sm-9.main
+          .col-xs-12
+            small.lightTitle Corporate account
+            h1= corporate[1].corporateaccount
+            br
+          .col-xs-6
+            h5: b= corporate[1].phone
+            ul.list-unstyled
+              li: span
+                a(href= "corporate[1].scuLink" )= corporate[1].scu
+              li: span= "NP: $" + corporate[1].np
+          .col-xs-6.bordered
+            h5.lightTitle
+              = "Main Contact  "
+              span.glyphicon.glyphicon-user(aria-hidden="true")
+            p
+             = corporate[1].maincontactname
+             br
+             = corporate[1].maincontactfunction
+          .col-xs-12: hr
+          .col-xs-6.col-sm-3
+            h5.lightTitle Dealer
+            p= corporate[1].dealername
+          .col-xs-6.col-sm-3
+            h5.lightTitle Last Login
+            p= corporate[1].lastloginmonth + " " + corporate[1].lastloginday + " " + corporate[1].lastloginhour
+          .col-xs-12.col-sm-6
+            h5.lightTitle Last call
+            p=   p= corporate[1].lastloginmonth + " " + corporate[1].lastloginday + " " + corporate[1].lastloginhour + " (" + corporate[1].lastloginname + ")"
+          .col-xs-12: hr
+          .col-xs-12
+            h5.lightTitle
+              = "Last Notes  "
+              span.glyphicon.glyphicon-user(aria-hidden="true")
+            ul.list-unstyled
+              for note in notes
+                li: p= note.notesdatemonth + " " + note.notesdateday + " " + note.notesauthor + "  :  " + note.notestxt
+            br
+        .col-xs-12.col-sm-3.side
+          .col-xs-12
+            p.lightTitle Active Trade
+            h2.side--title= activeTrade[1].activetrade
+            br
+            table.table
+              tr
+                td: b Buy
+                td= activeTrade[1].buy
+              tr
+                td: b Sell
+                td= activeTrade[1].sell
+              tr
+                td: b Margin
+                td= activeTrade[1].margin
+            br
+            h4 Dealer
+            p= activeTrade[1]. dealername
+      .row
+        .sectionCard--footer
+          button.btn.btn-lg.btn-success(type="button") ACCEPT
+          button.btn.btn-lg.btn-primary(type="button") TRANSFER
+          button.btn.btn-lg.btn-danger.pull-right(type="button") DECLINE

@@ -1,0 +1,36 @@
+{
+  "corporate": [
+    {
+      "id": 1,
+      "scu": "SC122323XE",
+      "scuLink": "http://solopx.com",
+      "corporateaccount": "Super Client Company Ltd.",
+      "phone": "0172 1234569",
+      "np": 12121.2,
+      "maincontactname": "John Snow",
+      "maincontactfunction": "Head of Marketing of The Wall",
+      "dealername": "Tanyel Ali",
+      "lastloginmonth": "oct",
+      "lastloginday": 12,
+      "lastloginyear": 12,
+      "lastloginhour": "12:45",
+      "lastloginname": "Hannah"
+    },
+    {
+      "id": 2,
+      "scu": "SC122323XE",
+      "scuLink": "http://solopx.com",
+      "corporateaccount": "Super Client Company Ltd.",
+      "phone": "0172 1234569",
+      "np": 12121.2,
+      "maincontactname": "John Snow",
+      "maincontactfunction": "Head of Marketing of The Wall",
+      "dealername": "Tanyel Ali",
+      "lastloginmonth": "oct",
+      "lastloginday": 12,
+      "lastloginyear": 2016,
+      "lastloginhour": "12:45",
+      "lastloginname": "Hannah"
+    }
+  ]
+}

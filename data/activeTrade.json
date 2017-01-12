@@ -1,0 +1,23 @@
+{
+  "activeTrade": [
+    {
+      "id": 1,
+       "scu": "SC122323XE",
+       "activetrade": "XA12891231",
+       "buy": 12000,
+       "sell": 10000,
+       "margin": 0.15,
+       "dealername": "Steven Gerard"
+    },
+    {
+      "id": 2,
+       "scu": "SC122323XE",
+       "activetrade": "XA12891231",
+       "buy": 12000,
+       "sell": 10000,
+       "margin": 0.15,
+       "dealername": "Steven Gerard"
+    }
+  ]
+
+}
